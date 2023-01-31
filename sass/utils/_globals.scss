@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font-family);
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h5 {
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin-right: 30px;
+}
+
+h6 {
+    margin-right: 30px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 94px 0px;
+}
+
+.img-block {
+    display: block;
+}
+.text--center {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-color);
+}

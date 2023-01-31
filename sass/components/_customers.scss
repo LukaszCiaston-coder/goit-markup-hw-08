@@ -1,0 +1,25 @@
+.customers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    &__logo {
+        cursor: pointer;
+        display: flex;
+    }
+
+    &--icon {
+        fill: var(--icons-color);
+        padding: 16px 32px;
+        border: 1px solid var(--icons-color);
+        border-radius: 4px;
+
+        &:hover {
+            fill: var(--active-color);
+            border-color:  var(--active-color);
+            transition: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
