@@ -8,6 +8,10 @@ body {
     color: var(--primary-color);
 }
 
+html{
+    overflow-x: hidden;
+}
+
 ul {
     list-style: none;
     align-items: center;
