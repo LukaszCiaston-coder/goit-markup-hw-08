@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/modern-normalize.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -22,72 +21,56 @@
 
 <body>
     <header class="header">
-        <div class="logo">
-            <a class="logo__header" href="./index.html"><span class="logo--colorpart">Web</span>Studio</a>
-        </div>
-        <nav>
-            <ul class="header__nav-list">
-                <li><a class="header__nav-item header__nav-item--active" href="./index.html" target="_blank">Agencja</a>
-                </li>
-                <li><a class="header__nav-item" href="./portfolio.html">Portfolio</a></li>
-                <li><a class="header__nav-item" href="./Kontakt" target="_blank">Kontakt</a>
-            </ul>
-        </nav>
-        <ul class="header__connect">
-            <li>
-                <a class="header__item" href="/mailto:info@devstudio.com">
-                    <svg class="header__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope">
-                        </use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="header__item" href="/tel:48111111111">
-                    <svg class="header__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone">
-                        </use>
-                    </svg>+48 111 111 111</a>
-            </li>
-        </ul>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-            <div class="menu-container js-menu-container" id="mobile-menu">
-                <button class="menu-toggle js-close-menu">
-                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="18.67" height="18.67">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
+        <button class="header__menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                class="header__menu-btn-svg">
+                <use href="images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+        </button>
+        
+        
+        <div class="container header__wrapper">
+            <nav class="header__nav">
+                <a class="logo" href="index.html">
+                    Web<span class="logo logo--black">Studio</span></a>
+        
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link header__nav-active-link" href="index.html">Agencja</a>
+                    </li>
+        
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+        
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <div class="header__contacts">
+                <a class="header__contacts-link" href="mailto:info@devstudio.com">
+                    <svg class="header__contacts-link-icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>
-                </button>
-            
-                <ul class="mobile__menu">
-                    <li><a href="" class="link">Agencja</a></li>
-                    <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-                    <li><a href="" class="link">Kontakt</a></li>
-                </ul>
-                <ul class="mobile__contact">
-                    <li><a class="mobile__contact__items" href="/tel:48111111111">+48 111 111 111</a></li>
-                    <li><a class="mobile__contact__items" href="/mailto:info@devstudio.com">info@devstudio.com</a></li>
-                </ul>
-                <ul class="mobile__media">
-                    <li><a class="mobile__media__items">Instagram</a></li>
-                    <li><a class="mobile__media__items">Twitter</a></li>
-                    <li><a class="mobile__media__items">Facebook</a></li>  
-                    <li><a class="mobile__media__items">Linkedln</a></li>
-
-                </ul>
+        
+                    info@devstudio.com</a>
+        
+                <a class="header__contacts-link" href="tel:+48111111111">
+                    <svg class="header__contacts-link-icon" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>+48 111 111 111
+                </a>
             </div>
+        </div>
+
     </header>
 
     <main>
 
         <section class="section main-title">
-            <div class="container">
+            <div class="container main-title__wrap">
                 <h1 class="main-title__title">EFEKTYWNE ROZWIĄZANIA<br>DLA NASZEGO BIZNESU</h1>
                 <button class="main-title__button main-title__button--text" type="button" data-modal-open>Zamów
                     usługę</button>
@@ -408,11 +391,9 @@
     </main>
     <footer class="footer">
         <div class="container footer__item">
-            <div class="footer__items">
-                <div class="logo">
-                    <a class="logo__footer" href="./index.html">Web<span class="logo--colorpart">Studio</span></a>
-                </div>
-                <address class="footer__address">
+            <div class="footer__adress__items">
+                    <a class="logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
+                <address class="footer__adress">
                     <ul>
                         <li><a class="footer__link footer__link--white" href="https://goo.gl/maps/t7D3Fm8JjVbQzfDk6"
                                 title="Lokalizacja">m. Warszawa, Aleje Jerozolimskie 21</a></li>
@@ -422,7 +403,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="footer__items">
+            <div class="footer__media__items">
                 <span class="footer__text">DOŁĄCZ DO NAS</span>
                 <ul class="footer__media">
                     <li>
@@ -456,17 +437,15 @@
 
                 </ul>
             </div>
-            <div class="footer__items">
+            <form name="signup"class="footer__newslatter__items"autocomplete="on" novalidate>
                 <label for="singup"class="footer__text">ZAPISZ SIĘ DO NEWSLETTERA</label>
-                <form class="footer__singup" name="signup_form" autocomplete="on" novalidate>
                         <input id="singup" class="footer__singup-window footer__singup-window--color" type="email" name="email"
                             placeholder="E-mail">
-                    <button class="footer__email-button" type="submit">Zapisz się <svg class="footer__send" width="24"
+                    <button class="footer__send-button" type="submit">Zapisz się <svg class="footer__send-svg" width="24"
                             height="24">
                             <use href="images/icons.svg#icon-icon-send"></use>
                         </svg></button>
                 </form>
-            </div>
         </div>
 
     </footer>
@@ -514,6 +493,52 @@
             </form>
         </div>
     </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-container__close js-close-menu">&times;</button>
+        
+            <ul class="menu-container__nav-list">
+                <li class="menu-container__nav-item">
+                    <a class="menu-container__nav-link menu-container--active" href="index.html">Agencja</a>
+                </li>
+        
+                <li class="menu-container__nav-item">
+                    <a class="menu-container__nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+        
+                <li class="menu-container__nav-item">
+                    <a class="menu-container__nav-link" href="contact.html">Kontakt</a>
+                </li>
+            </ul>
+        
+            <div class="menu-container__wrapper">
+                <div class="menu-container__contacts">
+                    <a class="menu-container__contacts-link menu-container__contacts-link--tel" href="tel:+48111111111">
+                        +48 111 111 111
+                    </a>
+                    <a class="menu-container__contacts-link menu-container__contacts-link--email"
+                        href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </div>
+                <ul class="menu-container__social-media">
+                    <li class="menu-container__social-media-item">
+                        <a class="menu-container__social-media-link menu-container__social-media-link--padding-right"
+                            href="#">Instagram</a>
+                    </li>
+                    <li class="menu-container__social-media-item">
+                        <a class="menu-container__social-media-link menu-container__social-media-link--border"
+                            href="#">Twitter</a>
+                    </li>
+                    <li class="menu-container__social-media-item">
+                        <a class="menu-container__social-media-link menu-container__social-media-link--border"
+                            href="#">Facebook</a>
+                    </li>
+                    <li class="menu-container__social-media-item">
+                        <a class="menu-container__social-media-link menu-container__social-media-link--padding-left"
+                            href="#">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

@@ -1,29 +1,30 @@
 .logo {
-    font-size: 26px;
-    font-weight: 700;
+    color: var(--active-color);
     font-family: 'Raleway', sans-serif;
-    line-height: 1.17;
-    
-    &--colorpart {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    outline: none;
+
+    @include desktop {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+    &--black {
+        color: var(--secondary-color);
+    }
+
+    &--black:hover{
         color: var(--active-color);
     }
 
-    &__header {
-        color: #000000;
-        text-decoration: none;
-    
-        &:hover {
-            color: var(--active-color);
-        }
+    &--white {
+        color: var(--white);
     }
-    &__footer {
-        color: #ffff;
-        text-decoration: none;
 
-        &:hover {
-            color: var(--active-color);
-            transition: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    &--white:is(:hover, :focus) {
+        color: var(--active-color);
     }
 }

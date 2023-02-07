@@ -1,3 +1,4 @@
+@import "./utils/mixins";
 @import "./utils/globals";
 @import "./utils/vars";
 
@@ -12,3 +13,5 @@
 @import "./components/project";
 @import "./components/rectangle";
 @import "./components/team";
+@import "./components/mobile";
+@import "./components/menu";
