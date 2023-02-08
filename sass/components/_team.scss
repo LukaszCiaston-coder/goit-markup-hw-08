@@ -1,9 +1,14 @@
 .team {
-    display: flex;
     justify-items: center;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include desktop{
+        display:flex;
+        flex-wrap: nowrap;
     }
 
     &--background {
@@ -48,8 +53,6 @@
         }
 
         @include desktop {
-        flex-wrap: nowrap;
-        align-items: center;
         width: 270px;
         height: 428px;
         }
