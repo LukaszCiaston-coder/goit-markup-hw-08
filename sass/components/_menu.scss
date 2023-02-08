@@ -44,12 +44,24 @@
         text-decoration: none;
     }
 
-    &__contacts {
-        padding: 48px 40px 48px 40px;
-    }
+ &__contacts{
+    display: block;
+    padding-left: 40px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    
 
-    &__nav-link,
-    &__contacts-link {
+    &-link{
+        text-decoration: none;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+ }
+
+    &__nav-link{
         color: var(--secondary-color);
         text-decoration: none;
         display:flex;
@@ -98,13 +110,7 @@
         letter-spacing: 0.02em;
     }
 
-    &__social-media-link--padding-right {
-        padding-right: 10px;
-    }
-
-    &__social-media-link--padding-left {
-        padding-left: 10px;
-    }
+  
 
     &__social-media-link--border {
         border-left: 1px solid rgba(33, 33, 33, 0.2);
