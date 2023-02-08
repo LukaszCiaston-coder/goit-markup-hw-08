@@ -42,3 +42,9 @@
         display: none;
     }
  }
+
+ @include desktop {
+    .product__container {
+        display:block;
+    }
+ }
