@@ -2,17 +2,7 @@
     display: flex;
     justify-content: space-around;
 
-    @media (max-width: 768px) {
-        .product__container{
-            display: none;
- }
-}
-
- @include tablet {
-    .product__container {
-        display: none;
-    }
- }
+  
 
     &__box {
         position: relative;
@@ -41,4 +31,14 @@
         color: #FFFFFF;
     }
 }
+  @media (max-width: 768px) {
+        .product__container{
+            display: none;
+ }
+}
 
+ @include tablet {
+    .product__container {
+        display: none;
+    }
+ }
