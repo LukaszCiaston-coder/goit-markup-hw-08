@@ -1,8 +1,9 @@
 .main-title {
-    max-width: 480px;
+    max-width: 768px;
     max-height: 400px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--dark-background-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/team-mob-x1.jpg");
     background-position: center;
@@ -11,7 +12,7 @@
     
     @include tablet{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/team-tab-x1.jpg");
-    max-width: 768px;
+    max-width: 1200px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;

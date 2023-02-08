@@ -4,7 +4,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-
     background-color: var(--white);
     z-index: 999;
     display: flex;
@@ -34,15 +33,15 @@
     }
 
     &__nav-list {
-        font-weight: 500;
+        display: block;
+        padding-top: 48px;
+        padding-left: 40px;
+        color: #212121;
         font-size: 40px;
-        line-height: 1.17;
+        font-weight: 500;
         letter-spacing: 0.02em;
-        color: var(--secondary-color);
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        padding: 48px 40px 48px 40px;
+        line-height: 1.17;
+        text-decoration: none;
     }
 
     &__contacts {
@@ -53,12 +52,14 @@
     &__contacts-link {
         color: var(--secondary-color);
         text-decoration: none;
+        display:flex;
+        margin-bottom: 32px;
     }
 
     &--active {
         color: var(--active-color);
     }
-
+    
     &__contacts-link {
         display: block;
         font-weight: 500;

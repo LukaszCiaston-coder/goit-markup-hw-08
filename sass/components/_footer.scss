@@ -47,8 +47,10 @@
         }
     
     &__media__items{
-        width: 206px;
-        height: 80px;
+        @include desktop{
+            margin-top: 12px;
+        }
+        
     }   
     
   &__text {
@@ -96,9 +98,17 @@
         @include desktop {
             align-items: flex-start;
             width: 570px;
+            margin-top: 4px;
+
         }
     }
-   
+   &__newslatter{
+    @include desktop {
+            display:flex;
+           
+    
+        }
+   }
    &__singup-window{
         display: flex;
         margin-top: 20px;
@@ -121,7 +131,6 @@
             @include desktop {
                 width: 358px;
                 height: 50px;
-                margin-right: 207px;
             }
     }
     &__singup-window::placeholder{

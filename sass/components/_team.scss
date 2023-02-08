@@ -1,20 +1,52 @@
 .team {
     display: flex;
     justify-items: center;
+    
 
+         @media (max-width: 768px) {
+            flex-direction: column;
+    
+        }
+    
+        @include tablet {
+            flex-wrap: wrap;
+            
+        }
+    
     &--background {
         background-color:var(--grey-background-color);
+        
+   
     }
 
     &__gallery {
         display: flex;
-        width: 270px;
-        height: 428px;
+        align-items: center;
+        justify-content: space-between;
         padding: 0px;
         margin-right: 30px;
         box-shadow: 0px 1px 3px, 0px 1px 1px, 0px 2px 1px;
         border-radius: 0px 0px 4px 4px;
         background-color: #FFFFFF;
+
+@media (max-width: 768px) {
+        
+        width:450px;
+        height: 460px;
+        
+    }
+
+    @include tablet {
+       
+        width: 354px;
+            height: 374px;
+    }
+
+    @include desktop {
+        width: 270px;
+            height: 260px;
+    }
+
     }
 
     &__name {

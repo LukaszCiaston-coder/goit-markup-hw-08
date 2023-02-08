@@ -70,7 +70,7 @@
     <main>
 
         <section class="section main-title">
-            <div class="container main-title__wrap">
+            <div class="container main-title__wrape">
                 <h1 class="main-title__title">EFEKTYWNE ROZWIĄZANIA<br>DLA NASZEGO BIZNESU</h1>
                 <button class="main-title__button main-title__button--text" type="button" data-modal-open>Zamów
                     usługę</button>
@@ -130,7 +130,7 @@
                 </ul>
            
         </div>
-        <div class="container">
+        <div class="container product__container">
             <section class="section">
                 <h2 class="text--center"> Czym się zajmujemy
                 </h2>
@@ -161,9 +161,19 @@
                 <div class="team">
                     <div class="team__gallery">
                         <figure>
-                            <img class="img-block" alt="John Doe Product Designet" src="images/productdisainer.jpg"
-                                width="270" height="260">
-                            <figcaption>
+                            <img class="img-block" alt="John Doe Product Designet" src="images/productdisainer-mob-1x.jpg"
+                               srcset="
+                               images/productdisainer-mob-1x.jpg 450w,
+                               images/productdisainer-mob-2x.jpg 900w,
+                               images/productdisainer-tab-1x.jpg 354w,
+                               images/productdisainer-tab-2x.jpg 708w,
+                               images/productdisainer-desk-1x.jpg 270w,
+                               images/productdisainer-desk-2x.jpg 540w,
+                               images/productdisainer.jpg 810w"
+
+                               size="(min-width=769px) 270px, (min-width=481px) 354px, 450px"/>
+                            
+                               <figcaption>
                                 <ul>
                                     <li class="team__name">John Doe</li>
                                     <li class="team__position">Product Designet</li>
@@ -205,8 +215,17 @@
                     </div>
                     <div class="team__gallery">
                         <figure>
-                            <img class="img-block" alt="John Doe Frontend Developer" src="images/frontenddeveloper.jpg"
-                                width="270" height="260">
+                            <img class="img-block" alt="John Doe Frontend Developer" src="images/frontenddeveloper-mob-1x.jpg"
+                               srcset="
+                               images/frontenddeveloper-mob-1x.jpg 450w,
+                               images/frontenddeveloper-mob-2x.jpg 900w,
+                               images/frontenddeveloper-tab-1x.jpg 354w,
+                               images/frontenddeveloper-tab-2x.jpg 708w,
+                               images/frontenddeveloper-desk-1x.jpg 270w,
+                               images/frontenddeveloper-desk-2x.jpg 540w,
+                               images/frontenddeveloper.jpg 810w"
+
+                               size="(min-width=769px) 270px, (min-width=481px) 354px, 450px"/>
                             <figcaption>
                                 <ul>
                                     <li class="team__name">John Doe</li>
@@ -249,8 +268,17 @@
                     </div>
                     <div class="team__gallery">
                         <figure>
-                            <img class="img-block" alt="John Doe Marketing" src="images/marketing.jpg" width="270"
-                                height="260">
+                            <img class="img-block" alt="John Doe Marketing" src="images/marketing-mob-1x.jpg" 
+                            srcset="
+                               images/marketing-mob-1x.jpg 450w,
+                               images/marketing-mob-2x.jpg 900w,
+                               images/marketing-tab-1x.jpg 354w,
+                               images/marketing-tab-2x.jpg 708w,
+                               images/marketing-desk-1x.jpg 270w,
+                               images/marketing-desk-2x.jpg 540w,
+                               images/marketing.jpg 810w"
+
+                               size="(min-width=769px) 270px, (min-width=481px) 354px, 450px"/>
                             <figcaption>
                                 <ul>
                                     <li class="team__name">John Doe</li>
@@ -293,8 +321,17 @@
                     </div>
                     <div class="team__gallery">
                         <figure>
-                            <img class="img-block" alt="John Doe Ul Designer" src="images/uldesigner.jpg" width="270"
-                                height="260">
+                            <img class="img-block" alt="John Doe Ul Designer" src="images/uldesigner-mob-1x.jpg" 
+                            srcset="
+                               images/uldesigner-mob-1x.jpg 450w,
+                               images/uldesigner-mob-2x.jpg 900w,
+                               images/uldesigner-tab-1x.jpg 354w,
+                               images/uldesigner-tab-2x.jpg 708w,
+                               images/uldesigner-desk-1x.jpg 270w,
+                               images/uldesigner-desk-2x.jpg 540w,
+                               images/uldesigner.jpg 810w"
+
+                               size="(min-width=769px) 270px, (min-width=481px) 354px, 450px"/>
                             <figcaption>
                                 <ul>
                                     <li class="team__name">John Doe</li>
@@ -438,13 +475,14 @@
                 </ul>
             </div>
             <form name="signup"class="footer__newslatter__items"autocomplete="on" novalidate>
-                <label for="singup"class="footer__text">ZAPISZ SIĘ DO NEWSLETTERA</label>
+                <label for="singup"class="footer__text ">ZAPISZ SIĘ DO NEWSLETTERA</label>
+                <div class="footer__newslatter">
                         <input id="singup" class="footer__singup-window footer__singup-window--color" type="email" name="email"
                             placeholder="E-mail">
                     <button class="footer__send-button" type="submit">Zapisz się <svg class="footer__send-svg" width="24"
                             height="24">
                             <use href="images/icons.svg#icon-icon-send"></use>
-                        </svg></button>
+                        </svg></button></div>
                 </form>
         </div>
 
@@ -493,6 +531,7 @@
             </form>
         </div>
     </div>
+    <!-------------------Mobile window----------------->
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-container__close js-close-menu">&times;</button>
         
