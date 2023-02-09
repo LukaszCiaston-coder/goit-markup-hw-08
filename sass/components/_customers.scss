@@ -4,20 +4,20 @@
 
     @include mobile {
         flex-wrap: wrap;
-    
-        }
-    
-        @include tablet {
-            flex-wrap: wrap;
-    
-        }
-    
-        @include desktop {
-            flex-wrap: nowrap;
-            align-items: center;
-        }
-    
-    
+
+    }
+
+    @include tablet {
+        flex-wrap: wrap;
+
+    }
+
+    @include desktop {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+
 
     &__logo {
         cursor: pointer;
@@ -26,29 +26,29 @@
 
     &--icon {
         fill: var(--icons-color);
-        
+
         border: 1px solid var(--icons-color);
         border-radius: 4px;
         height: 92px;
 
         @include mobile {
-                width: 210px;
-        padding: 16px 52px;
-            }
-        
-            @include tablet {
-                width: 226px;
-        padding: 16px 60px;
-            }
-        
-            @include desktop {
+            width: 210px;
+            padding: 16px 52px;
+        }
+
+        @include tablet {
+            width: 226px;
+            padding: 16px 60px;
+        }
+
+        @include desktop {
             width: 170px;
-            padding: 16px 32px;    
-            }
+            padding: 16px 32px;
+        }
 
         &:hover {
             fill: var(--active-color);
-            border-color:  var(--active-color);
+            border-color: var(--active-color);
             transition: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }

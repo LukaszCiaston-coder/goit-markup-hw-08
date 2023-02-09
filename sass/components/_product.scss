@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+    .product__container {
+        display: none;
+    }
+}
+
 .product {
     display: flex;
     justify-content: space-around;
@@ -31,20 +37,3 @@
         color: #FFFFFF;
     }
 }
-  @media (max-width: 768px) {
-        .product__container{
-            display: none;
- }
-}
-
- @include tablet {
-    .product__container {
-        display: none;
-    }
- }
-
- @include desktop {
-    .product__container {
-        display:block;
-    }
- }

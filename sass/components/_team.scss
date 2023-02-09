@@ -22,20 +22,20 @@
 
     &__galery__img{
         @include mobile {
-        width:450px;
-        height: 460px;
+        max-width:450px;
+        
         }
 
         @include tablet {
-        width: 354px;
-        height: 374px;
+        max-width: 354px;
+        
         flex-direction: row;
             flex-wrap: wrap;
         }
 
         @include desktop {
-        width: 270px;
-        height: 260px;
+        max-width: 270px;
+        
         }
     }
 
@@ -51,7 +51,7 @@
         }
     
         @include desktop {
-            max-width: 270;
+            max-width: 270px;
             display: inline-block;
         }
     }
