@@ -94,10 +94,8 @@
     }
 
     &__newslatter {
-        display: flex;
-        flex-direction: column;
-
         @include desktop {
+            display: flex;
             flex-direction: row;
         }
     }
@@ -133,7 +131,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin-top: 20px;
+        margin: 20px auto;
         letter-spacing: 0.06em;
         background-color: var(--active-color);
         color: #FFFFFF;
