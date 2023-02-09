@@ -22,9 +22,9 @@
     
     &__adress__items{
        
-            @include desktop {
-                flex-wrap: nowrap;
-            }
+        @include desktop {
+        flex-wrap: nowrap;
+        }
     }
 
         &__link {
@@ -48,7 +48,7 @@
     
     &__media__items{
         @include desktop{
-            margin-top: 12px;
+        margin-top: 12px;
         }
         
     }   
@@ -96,19 +96,18 @@
         align-content: center;
         
         @include desktop {
-            align-items: flex-start;
-            width: 570px;
-            margin-top: 4px;
-
+        align-items: flex-start;
+        width: 570px;
+        margin-top: 4px;
         }
     }
+
    &__newslatter{
-    @include desktop {
-            display:flex;
-           
-    
+        @include desktop {
+        display:flex;
         }
    }
+
    &__singup-window{
         display: flex;
         margin-top: 20px;
@@ -125,12 +124,12 @@
            }
        
             @include tablet {
-                width: 450px;
+            width: 450px;
             }
     
             @include desktop {
-                width: 358px;
-                height: 50px;
+            width: 358px;
+            height: 50px;
             }
     }
     &__singup-window::placeholder{
