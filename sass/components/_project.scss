@@ -26,8 +26,7 @@
     }
     &__figure {
         cursor: pointer;
-        margin-right: 30px;
-        margin-bottom: 30px;
+        margin:0;
         max-width: 450px;
         
         @include tablet {
