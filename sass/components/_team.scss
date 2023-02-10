@@ -15,7 +15,6 @@
         flex-wrap: nowrap;
     }
     
-
     &--background {
         background-color:var(--grey-background-color);
     }
@@ -23,19 +22,16 @@
     &__galery__img{
         @include mobile {
         max-width:450px;
-        
         }
 
         @include tablet {
         max-width: 354px;
-        
         flex-direction: row;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         }
 
         @include desktop {
         max-width: 270px;
-        
         }
     }
 
