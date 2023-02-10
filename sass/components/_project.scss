@@ -1,29 +1,22 @@
 .project {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     list-style-type: none;
     align-items: center;
     
     @include tablet {
-        display:flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
     }
     
-    @include desktop {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 
- &__img {
-     @include mobile {
-         max-width: 450px;
-
-     }
+    &__img {
+        max-width: 450px;
 
      @include tablet {
          max-width: 354px;
-         flex-direction: row;
-         flex-wrap: wrap;
 
      }
 
