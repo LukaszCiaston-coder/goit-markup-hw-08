@@ -1,13 +1,51 @@
 .project {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+    
+    @include tablet {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
+ &__img {
+     @include mobile {
+         max-width: 450px;
+
+     }
+
+     @include tablet {
+         max-width: 354px;
+         flex-direction: row;
+         flex-wrap: wrap;
+
+     }
+
+     @include desktop {
+         max-width: 370px;
+
+     }
+ }
     &__figure {
         cursor: pointer;
         margin-right: 30px;
         margin-bottom: 30px;
-    
+        max-width: 450px;
+        
+        @include tablet {
+            max-width: 354px;
+        }
+        
+        @include desktop {
+            max-width: 370px;
+        }
+        
         &:hover {
             box-shadow: 0px 1px 1px, 0px 4px 4px, 1px 4px 6px;
             transition: 250ms;
@@ -17,10 +55,18 @@
 
     &__item {
         position: relative;
-        width: 370px;
-        height: 294px;
+        max-width: 450px;
         overflow: hidden;
-    
+
+    @include tablet{
+        max-width: 354px;
+        
+    }
+    @include desktop{
+        max-width: 370px;
+        
+    }
+
         &:hover .project__overlay {
             top: 0;
             transition: 250ms;
